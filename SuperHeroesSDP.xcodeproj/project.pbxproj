@@ -6,14 +6,28 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		39E8CBEE2F12D96900783471 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39E8CBEA2F12D96900783471 /* Assets.xcassets */; };
+		39E8CBEF2F12D96900783471 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8CBEB2F12D96900783471 /* ContentView.swift */; };
+		39E8CC072F12E2D000783471 /* SuperHeroesIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 39E8CC062F12E2D000783471 /* SuperHeroesIcon.icon */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		39E8CBDC2F12D2A600783471 /* SuperHeroesSDP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperHeroesSDP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39E8CBEA2F12D96900783471 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39E8CBEB2F12D96900783471 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		39E8CC062F12E2D000783471 /* SuperHeroesIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = SuperHeroesIcon.icon; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		39E8CBDE2F12D2A600783471 /* SuperHeroesSDP */ = {
+		39E8CBF12F12D96D00783471 /* System */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SuperHeroesSDP;
+			path = System;
+			sourceTree = "<group>";
+		};
+		39E8CBF22F12DA4000783471 /* Data */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +46,7 @@
 		39E8CBD32F12D2A600783471 = {
 			isa = PBXGroup;
 			children = (
-				39E8CBDE2F12D2A600783471 /* SuperHeroesSDP */,
+				39E8CBED2F12D96900783471 /* SuperHeroesSDP */,
 				39E8CBDD2F12D2A600783471 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +57,18 @@
 				39E8CBDC2F12D2A600783471 /* SuperHeroesSDP.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		39E8CBED2F12D96900783471 /* SuperHeroesSDP */ = {
+			isa = PBXGroup;
+			children = (
+				39E8CBEB2F12D96900783471 /* ContentView.swift */,
+				39E8CBF22F12DA4000783471 /* Data */,
+				39E8CBF12F12D96D00783471 /* System */,
+				39E8CBEA2F12D96900783471 /* Assets.xcassets */,
+				39E8CC062F12E2D000783471 /* SuperHeroesIcon.icon */,
+			);
+			path = SuperHeroesSDP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -61,7 +87,8 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				39E8CBDE2F12D2A600783471 /* SuperHeroesSDP */,
+				39E8CBF12F12D96D00783471 /* System */,
+				39E8CBF22F12DA4000783471 /* Data */,
 			);
 			name = SuperHeroesSDP;
 			packageProductDependencies = (
@@ -109,6 +136,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39E8CBEE2F12D96900783471 /* Assets.xcassets in Resources */,
+				39E8CC072F12E2D000783471 /* SuperHeroesIcon.icon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39E8CBEF2F12D96900783471 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +279,7 @@
 		39E8CBE82F12D2A800783471 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = SuperHeroesIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -287,7 +317,7 @@
 		39E8CBE92F12D2A800783471 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = SuperHeroesIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
