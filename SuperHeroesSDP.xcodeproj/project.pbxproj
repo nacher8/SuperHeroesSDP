@@ -10,6 +10,8 @@
 		39E8CBEE2F12D96900783471 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39E8CBEA2F12D96900783471 /* Assets.xcassets */; };
 		39E8CBEF2F12D96900783471 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8CBEB2F12D96900783471 /* ContentView.swift */; };
 		39E8CC072F12E2D000783471 /* SuperHeroesIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 39E8CC062F12E2D000783471 /* SuperHeroesIcon.icon */; };
+		39E8CC302F16CB0900783471 /* SuperHeroeInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8CC2D2F16CB0900783471 /* SuperHeroeInfoRow.swift */; };
+		39E8CC312F16CB0900783471 /* SuperHeroeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E8CC2E2F16CB0900783471 /* SuperHeroeRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +19,8 @@
 		39E8CBEA2F12D96900783471 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39E8CBEB2F12D96900783471 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		39E8CC062F12E2D000783471 /* SuperHeroesIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = SuperHeroesIcon.icon; sourceTree = "<group>"; };
+		39E8CC2D2F16CB0900783471 /* SuperHeroeInfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroeInfoRow.swift; sourceTree = "<group>"; };
+		39E8CC2E2F16CB0900783471 /* SuperHeroeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroeRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -28,6 +32,11 @@
 		39E8CBF22F12DA4000783471 /* Data */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Data;
+			sourceTree = "<group>";
+		};
+		39E8CC232F169F9F00783471 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -63,12 +72,23 @@
 			isa = PBXGroup;
 			children = (
 				39E8CBEB2F12D96900783471 /* ContentView.swift */,
+				39E8CC232F169F9F00783471 /* Views */,
+				39E8CC2F2F16CB0900783471 /* Components */,
 				39E8CBF22F12DA4000783471 /* Data */,
 				39E8CBF12F12D96D00783471 /* System */,
 				39E8CBEA2F12D96900783471 /* Assets.xcassets */,
 				39E8CC062F12E2D000783471 /* SuperHeroesIcon.icon */,
 			);
 			path = SuperHeroesSDP;
+			sourceTree = "<group>";
+		};
+		39E8CC2F2F16CB0900783471 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				39E8CC2E2F16CB0900783471 /* SuperHeroeRow.swift */,
+				39E8CC2D2F16CB0900783471 /* SuperHeroeInfoRow.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +109,7 @@
 			fileSystemSynchronizedGroups = (
 				39E8CBF12F12D96D00783471 /* System */,
 				39E8CBF22F12DA4000783471 /* Data */,
+				39E8CC232F169F9F00783471 /* Views */,
 			);
 			name = SuperHeroesSDP;
 			packageProductDependencies = (
@@ -149,6 +170,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				39E8CBEF2F12D96900783471 /* ContentView.swift in Sources */,
+				39E8CC302F16CB0900783471 /* SuperHeroeInfoRow.swift in Sources */,
+				39E8CC312F16CB0900783471 /* SuperHeroeRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
