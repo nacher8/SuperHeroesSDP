@@ -8,17 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    let superHeroes: [SuperHero]
+    let adaptativeItems: [GridItem] = [GridItem(.adaptive(minimum: 110))]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            ZStack {
+                LinearGradient(colors: [.blue.opacity(0.6), .orange.opacity(0.6)], startPoint: .bottom, endPoint: .top)
+                    .ignoresSafeArea()
+
+                ScrollView {
+                    VStack {
+                        LazyVGrid(columns: adaptativeItems) {
+                            ForEach (superHeroes) { heroe in
+                                NavigationLink(value: heroe) {
+                                    SuperHeroeRow(heroe: heroe)
+                                }
+                                .buttonStyle(.plain)
+                            }
+                        }
+                    }
+                    .navigationTitle("Super Heroes")
+                    .safeAreaPadding()
+                    .navigationDestination(for: SuperHero.self) { heroe in
+                        SuperHeroeInfoView(heroe: heroe)
+                    }
+                }
+            }
         }
-        .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(superHeroes: SuperHeroes)
 }

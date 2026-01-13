@@ -11,7 +11,7 @@ import SwiftUI
 struct SuperHeroesSDPApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(superHeroes: SuperHeroes)
         }
     }
 }
