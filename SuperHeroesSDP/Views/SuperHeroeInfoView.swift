@@ -37,7 +37,9 @@ struct SuperHeroeInfoView: View {
                 
                 SuperHeroeInfoRow(titulo: "Poderes: ", detalle: heroe.poderes.map { $0.rawValue }.joined(separator: ", "))
                 
-                SuperHeroeInfoRow(titulo: "Descripción: ", detalle: heroe.descripcion)
+                if !heroe.descripcion.isEmpty {
+                    SuperHeroeInfoRow(titulo: "Descripción: ", detalle: heroe.descripcion)
+                }
                 
                 Spacer()
             }
